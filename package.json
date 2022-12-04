@@ -1,0 +1,29 @@
+{
+  "name": "cpsc_349_project_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browsersync": "browser-sync start --server --startPath /index.html --files '*.html,*.css,*.js' 'modules/*.js'",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./assets/css/main.css --watch",
+    "start": "npm-run-all --parallel browsersync tailwind",
+    "test": "standard && vnu --skip-non-html --Werror *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedromorales451/CPSC_349_Project_3.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedromorales451/CPSC_349_Project_3/issues"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "standard": "^17.0.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "daisyui": "^2.42.1"
+  }
+}

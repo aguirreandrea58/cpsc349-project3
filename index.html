@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Game | Hangman</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body class="bg-blue-100">
+<div id="landing page">
+  <header class= "bg-green-100 p-4">
+    <nav class=" container mx-auto flex flex-row justify-between items-center text-blue-700">
+      <div class="text-4xl">Welcome to hangman!</div>
+      <div>
+        <a class="link" href="#page2">Start</a>
+        <a class="link" href="#HowToPlay">How to Play</a>
+        <a class="link" href="#credits">Credits</a>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-blue-100">
+    <div class="container mx-auto flex flex-row justify-between items-center py-20">
+      <div class="flex flex-col">
+        <h1>Let's Play!</h1>
+
+        <a id="btn" class="btn w-max cursor-pointer text-2xl" href="#page2">Start</a>
+      </div>
+    </div>
+
+    <div id="HowToPlay"class="container mx-auto">
+      <h2> How To Play</h2>
+      <p>
+        Step 1:Click Start! Then Click Let's Play!<br>
+        Step 2:Guess and select a letter <br>
+        Step 3:Wait to see if the letter you guessed is part of the word, if not watch your hang man grow! <br>
+        Step 4:Guess a different letter until your word is complete<br>
+        Step 5:See if you win or loose!<br>
+        Step 6:Click End Game to start a new game!<br>
+      </p>
+    </div>
+  </main>
+</div>
+
+<div id="page2" class="bg-blue-100 space-y-12" hidden>
+  <h3 class="flex justify-center text-blue-700">Guess the word!</h3>
+
+  <div class="flex justify-center space-x-16">
+    <img id="stage" src="/assets/images/hangman-blank.png" alt="Blank Hangman Stage Placeholder" class="border-dotted border-2 border-accent-focus pb-10">
+
+    <table class="my-60" id="word-holder"></table>
+  </div>
+
+  <div class="flex justify-center">
+    <div id="letters" class="flex flex-wrap justify-center items-end space-x-2 space-y-2 w-1/2"></div>
+  </div>
+
+</div>
+
+<div id="credits" class="container mx-auto mx-15 mt-12">
+  <h2>Credits</h2>
+  <p class="bg-blue-100">
+    CPSC 349- Group 15<br>
+    Member 1: Roman Barron<br>
+    Member 2: Pedro Morales <br>
+    Member 3: Harrison Park<br>
+    Member 4: Andrea Aguirre<br>
+    </p>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

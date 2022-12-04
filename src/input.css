@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+  @apply text-7xl font-bold mb-12;
+}
+h2{
+  @apply bg-blue-200 text-4xl flex flex-wrap justify-center mb-8 font-bold;
+}
+
+p{
+  @apply text-blue-700 text-2xl;
+}
+h3{
+  @apply  text-4xl mb-8 font-bold;
+}
+.link{
+  @apply ml-8 hover:underline;
+}
+.button{
+  @apply btn w-max cursor-pointer;
+}
